@@ -1,1 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300;400;600;800&display=swap');
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Saira', sans-serif !important;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ed2d2f ;
+  border-radius: 6px;
+}
+
+body {
+  scrollbar-color: #ed2d2f #000;
+}
+
+a{
+  text-decoration: none !important
+}
