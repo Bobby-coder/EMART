@@ -6,6 +6,8 @@ import Product from './pages/Product';
 import Contact from './pages/Contact';
 import Header from './components/Header';
 import Cart from './pages/Cart';
+import Footer from './components/Footer';
+import ErrorPage from './pages/ErrorPage';
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
         <Route path='product' element={<Product />} />
         <Route path='contact' element={<Contact />} />
         <Route path='cart' element={<Cart />} />
+        <Route path='*' element = {<ErrorPage />} />
       </Routes>
+      <Footer />
     </Router>
     </>
   );
