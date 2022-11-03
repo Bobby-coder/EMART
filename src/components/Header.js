@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { CgShoppingCart } from "react-icons/cg";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { SiBigcartel } from "react-icons/si";
 import { IoClose } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 
@@ -8,23 +9,19 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
 
   let pcNav =
-    "md:flex-row md:gap-8 md:text-white md:text-[13px] md:font-semibold md:static md:translate-y-0 md:bg-[#ed2d2f] md:h-auto";
+    "md:flex-row md:gap-8 md:text-white md:text-[15px] md:font-medium md:static md:translate-y-0 md:bg-[#181818] md:h-auto";
 
   let toggleNav =
-    `absolute h-screen w-full top-0 left-0 flex flex-col items-center justify-center bg-[#fff] z-40 uppercase text-[#000] translate-y-[-100%] transition-all ${pcNav}`;
+    `absolute h-screen w-full top-0 left-0 flex flex-col items-center justify-center bg-[#fff] z-40 uppercase text-[#181818] translate-y-[-100%] transition-all ${pcNav}`;
   
   let toggleListItem =
     "border-t-[1px] border-[#eee] border-solid w-full text-center py-4";
 
   return (
-    <nav className="flex items-center justify-between px-[2.5%] h-12 bg-[#ed2d2f]">
+    <nav className="flex items-center justify-between px-[2.5%] h-12 bg-[#181818]">
       <div>
         <NavLink to="/">
-          <img
-            src="../images/logo_transparent.png"
-            alt="e-mart logo"
-            className="h-24 w-28"
-          />
+          <SiBigcartel className="text-white"/>
         </NavLink>
       </div>
       <div>
